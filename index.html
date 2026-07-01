@@ -119,7 +119,27 @@ opacity:0.6;
 <p>✉ i@msapozhnikov.ru</p>
 <p>📍 Краснодар</p>
 </section>
+<section>
+<h2>Онлайн-расчёт сметы</h2>
 
+<select id="type">
+<option value="office">Офис</option>
+<option value="warehouse">Склад</option>
+<option value="production">Производство</option>
+</select>
+
+<br><br>
+
+<input id="area" type="number" placeholder="Площадь (м²)">
+
+<br><br>
+
+<button class="btn" onclick="calc()">Рассчитать</button>
+
+<p id="result"></p>
+</section>
+
+<script src="script.js"></script>
 <footer>
 © 2026 Бастион
 </footer>
